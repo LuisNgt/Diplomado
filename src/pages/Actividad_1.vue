@@ -27,6 +27,15 @@
                      <option v-for="item in programasUnicos" :key="item" :value="item">{{ item }}</option>
                   </select>
                </th>
+               <th class="px-6 py-3 text-center mb-4">matricula</th>
+             <th class="px-6 py-3 text-center mb-4">Hombre</th>
+             <th class="px-6 py-3 text-center mb-4">Mujer</th>
+             <th class="px-6 py-3 text-center mb-4">est 1</th>
+             <th class="px-6 py-3 text-center mb-4">est 2</th>
+             <th class="px-6 py-3 text-center mb-4">est 3</th>
+             <th class="px-6 py-3 text-center mb-4">est 4</th>
+             <th class="px-6 py-3 text-center mb-4">est 5</th>
+             <th class="px-6 py-3 text-center mb-4">est 6</th>
             </tr>
          </thead>
          <tbody>
@@ -41,6 +50,21 @@
                <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                   {{ item.programa }}
                </td>
+               <td class="px-6 py-4 text-black bg-stone-200">{{ item.total_matricula }}</td>
+             <td class="px-6 py-4 font-medium text-white whitespace-nowrap bg-stone-800 sorting_1">{{ item.sexo_feme
+                }}</td>
+             <td class="px-6 py-4 text-black bg-stone-200">{{ item.sexo_masc }}
+             </td>
+             <td class="px-6 py-4 font-medium text-white whitespace-nowrap bg-stone-800 sorting_1">{{ item.estrato_1
+                }}</td>
+             <td class="px-6 py-4 text-black bg-stone-200">{{ item.estrato_2 }}</td>
+             <td class="px-6 py-4 font-medium text-white whitespace-nowrap bg-stone-800 sorting_1">{{ item.estrato_3
+                }}</td>
+             <td class="px-6 py-4 text-black bg-stone-200">{{ item.estrato_4 }}
+             </td>
+             <td class="px-6 py-4 font-medium text-white whitespace-nowrap bg-stone-800 sorting_1">{{ item.estrato_5
+                }}</td>
+             <td class="px-6 py-4 text-black bg-stone-200">{{ item.estrato_6 }}</td>   
             </tr>
          </tbody>
       </table>
